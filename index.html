@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="action_page.php">
+      <form>
         <label for="nom">Nom</label>
         <input
           type="text"
@@ -36,8 +36,8 @@
         <label for="objet">Objet du message</label>
         <select id="objet" name="objet">
           <option value="0">choisissez une option dans la liste ...</option>
-          <option value="1">Prise de contact</option>
-          <option value="2">Réclamation client</option>
+          <option value="Prise de contact">Prise de contact</option>
+          <option value="Réclamation client">Réclamation client</option>
         </select>
 
         <label for="commentaire">Commentaire</label>
@@ -47,10 +47,14 @@
           placeholder="Saisissez votre message..."
           rows="10"
         ></textarea>
-        <input type="checkbox" id="rgpd" name="rgpd" required="required "/>
-        <label for="rgpd"> J'accepte les conditions d'utilisation du site et confirme avoir pris connaissance de la politique de confidentialité du site ...</label><br />
-        <button id="soumettre">Valider</button>
+        <input type="checkbox" id="rgpd" name="rgpd" />
+        <label for="rgpd">
+          J'accepte les conditions d'utilisation du site et confirme avoir pris
+          connaissance de la politique de confidentialité du site ...</label
+        ><br />
       </form>
+      <button id="soumettre">Valider</button>
+      <span id="message"></span>
     </div>
     <script src="js/formulaire.js"></script>
   </body>

@@ -46,3 +46,14 @@ button:hover {
 input[type='checkbox'] {
     margin-bottom : 10px;
 }
+
+#message {
+  display : none;
+}
+
+.error {
+  color : red;
+}
+.success {
+  color : green;
+}
