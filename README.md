@@ -6,8 +6,8 @@ Tutoriel réalisé en live le 09//05/2022
 -  :heavy_check_mark:	Traiter coté client les erreurs
 -  :heavy_check_mark:	 Afficher une div / span en cas d'erreur ou de succès
 -  :heavy_check_mark:	 Afficher une partie de formulaire supplémentaire si une checkbox est cochée
--  :heavy_check_mark:	Système de recherche d'insultes en JS sur un Textarea
--  :heavy_check_mark:	Un bouton pour gérer le thème sombre / clair
+-  :x:		Système de recherche d'insultes en JS sur un Textarea
+-  :x:		Un bouton pour gérer le thème sombre / clair
 
 
 ## Système de recherche d'insultes.
