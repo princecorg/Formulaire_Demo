@@ -17,7 +17,7 @@
   <body>
     <div class="container">
       <form>
-        <label for="nom">Nom</label>
+        <label class="texte" for="nom">Nom</label>
         <input
           type="text"
           id="nom"
@@ -25,7 +25,7 @@
           placeholder="Saisissez votre nom..."
         />
 
-        <label for="prenom">Prénom</label>
+        <label class="texte" for="prenom">Prénom</label>
         <input
           type="text"
           id="prenom"
@@ -33,25 +33,47 @@
           placeholder="Saisissez votre prénom"
         />
 
-        <label for="objet">Objet du message</label>
+        <label class="texte" for="objet">Objet du message</label>
         <select id="objet" name="objet">
           <option value="0">choisissez une option dans la liste ...</option>
           <option value="Prise de contact">Prise de contact</option>
           <option value="Réclamation client">Réclamation client</option>
         </select>
 
-        <label for="commentaire">Commentaire</label>
+        <label class="texte" for="commentaire">Commentaire</label>
         <textarea
           id="commentaire"
           name="commentaire"
           placeholder="Saisissez votre message..."
           rows="10"
         ></textarea>
-        <input type="checkbox" id="rgpd" name="rgpd" />
-        <label for="rgpd">
-          J'accepte les conditions d'utilisation du site et confirme avoir pris
-          connaissance de la politique de confidentialité du site ...</label
-        ><br />
+        <div id="gdpr">
+          <label for="rgpd" id="rgpdLabel">
+            J'accepte les conditions d'utilisation du site et confirme avoir
+            pris connaissance de la politique de confidentialité du site
+            présentée ci-dessous</label
+          >
+          <input type="checkbox" id="rgpd" name="rgpd" />
+
+          <article id="politique" name="politique" rows="10">
+            <h3>Kaamelott Ipsum</h3>
+            <span
+              ><a href="https://www.kaamelott-ipsum.online/" target="_blank"
+                >Générateur de lorem ipsum sur le thème de Kaamelott.
+              </a></span
+            >
+            <p>
+              Mais ils ont pas le droit de décider de la retraite eux-mêmes! On
+              l’a dit et redit ça! On plaisante, on plaisante… P’tite pucelle!
+            </p>
+            <p>
+              Ah ben non tant que vous nous obligez pas à les manger! Hé mais
+              j'ai failli me la prendre! Mais bien sûr, comme ça au lieu de
+              confondre les signes, ils auraient confondu les couleurs! C’est
+              une tarte aux myrtilles. Pourquoi elle vous revient pas?
+            </p>
+          </article>
+        </div>
       </form>
       <button id="soumettre">Valider</button>
       <span id="message"></span>

@@ -1,3 +1,8 @@
+form {
+  width: 80%;
+  margin: auto;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type='text'],
 select,
@@ -12,6 +17,11 @@ textarea {
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+.texte {
+  font-weight: bold;
+  color: green;
+}
+
 /* Style the submit button with a specific background color etc */
 button {
   background-color: #04aa6d;
@@ -21,13 +31,10 @@ button {
   border-radius: 4px;
   cursor: pointer;
   display: block;
-  width : 120px;
- }
-
- form {
-    width: 80%;
-    margin: auto;
- }
+  width: 120px;
+  margin: auto;
+  margin-top: 10px;
+}
 
 /* When moving the mouse over the submit button, add a darker green color */
 button:hover {
@@ -38,22 +45,48 @@ button:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin: auto;
+  width: 90%;
+}
+
+article {
+  display: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid black;
+  background: white;
+  margin: 10px 0 10px 0;
+}
+
+#gdpr {
+  position: relative;
 }
 
 input[type='checkbox'] {
-    margin-bottom : 10px;
+  position: absolute;
+  left:5px;
+  top :5px;
+}
+
+#rgpdLabel {
+  margin: 0 0 0 25px;
+}
+
+input[type='checkbox']:checked + article {
+  display: block;
 }
 
 #message {
-  display : none;
+  display: none;
 }
 
 .error {
-  color : red;
+  color: red;
 }
 .success {
-  color : green;
+  color: green;
 }
