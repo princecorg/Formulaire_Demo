@@ -65,14 +65,14 @@ commentaire.addEventListener('keyup',controlerTexte)
 
 // fonction qui contrôle la présence de mots non autorisés (les "gros mots")
 function controlerTexte() {
-  let contenuCommentaire = commentaire.value
   // boucle pour contrôler la présence de chaque mot dans la chaîne de caractères
   for (i = 0; i<motsProscrits.length; i++) {
+    let contenuCommentaire = commentaire.value
     if(contenuCommentaire.includes(motsProscrits[i])){
       alert (`le mot ${motsProscrits[i]} n\'est pas autorisé ici !`)
       //supprimer uniquement le mot proscrit du Textarea
-      let motRetire = motsProscrits[i].length
-      commentaire.value = contenuCommentaire.substr(0,motRetire)
+       motRetire = motsProscrits[i].length
+      commentaire.value = contenuCommentaire.slice(0,-motRetire)
     }
   }
 }
