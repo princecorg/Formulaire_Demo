@@ -17,6 +17,10 @@ textarea {
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+ .invalide {
+  border: 2px solid red !important; /* Forced CSS, not a good habit */
+}
+
 .texte {
   font-weight: bold;
   color: green;
@@ -27,13 +31,14 @@ button {
   background-color: #04aa6d;
   color: white;
   padding: 12px 20px;
-  border: none;
+  border: 2px solid white;
   border-radius: 4px;
   cursor: pointer;
   display: block;
   width: 120px;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
@@ -82,6 +87,7 @@ input[type='checkbox']:checked + article {
 
 #message {
   display: none;
+  text-align: center;
 }
 
 .error {
