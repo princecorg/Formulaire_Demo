@@ -13,7 +13,7 @@ Tutoriel réalisé en live le 09//05/2022
 ## Système de recherche d'insultes.
 Approche possible : 
 - Définir un tableau contenant la liste des insultes à vérifier
-- Comparer dans une boucle les enregistrments du tableau avec la chaîne de caractères (par exemple averc String.prototype.includes() exemple : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+- Comparer les enregistrments du tableau avec la chaîne de caractères (par exemple avec String.prototype.includes() documentation : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
 - Afficher un message indiquant le mot trouvé.
 
 ## Mode sombre en JS
