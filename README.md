@@ -1,6 +1,6 @@
 # Formulaire_Demo
 ## Ceci est une démo de gestion de formulaire en Javascript
-Tutoriel réalisé en live le 09//05/2022
+Tutoriel réalisé en live le 09/05/2022
 ## Objectifs :
 -  :heavy_check_mark:	Récupérer les infos en JS
 -  :heavy_check_mark:	Traiter coté client les erreurs
